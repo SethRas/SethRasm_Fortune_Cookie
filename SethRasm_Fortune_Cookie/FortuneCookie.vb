@@ -2,15 +2,14 @@
 'RCET 0265
 'Spring 2022
 'Fortune Cookie
-'
+'https://github.com/SethRas/SethRasm_Fortune_Cookie.git
 
 Option Strict On
 Option Explicit On
 Module FortuneCookie
 
-    Sub Main()
+    Sub Main() 'Make 15 Random mumbers and call random integer
         For i = 0 To 15
-
             RandomInteger()
         Next
     End Sub
@@ -19,14 +18,14 @@ Module FortuneCookie
         Dim theRandomNmber As Single
 
         Randomize()
-        theRandomNmber = CInt(Rnd() * 10)
+        theRandomNmber = CInt(Rnd() * 10) 'Multily the random number by 10 and round it
 
         If theRandomNmber = 2 Or theRandomNmber = 1 Then
             Console.WriteLine("If you want somethin you've never had, you'll have to do something you've never done")
         ElseIf theRandomNmber = 0 Or theRandomNmber = 3 Then
             Console.WriteLine("You never lose, you either win or learn")
         ElseIf theRandomNmber = 4 Or theRandomNmber = 5 Then
-            Console.WriteLine("The early bird gets the worm but the second mouse gets the cheese.")
+            Console.WriteLine("The early bird gets the worm but the second mouse gets the cheese")
         ElseIf theRandomNmber = 6 Or theRandomNmber = 7 Then
             Console.WriteLine("You are the crispy noodle in the vegetarian salad of life")
         ElseIf theRandomNmber = 8 Or theRandomNmber = 9 Then
